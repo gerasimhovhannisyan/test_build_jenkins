@@ -7,7 +7,7 @@ def tag = params.latest ? 'latest' : env.BRANCH_NAME.tokenize('/').last()
 env.DHUB_PROJECT = "test-jenkins"
 env.DHUB_USER = "jenkins-test"
 env.DHUB_PASS = "Dunerunner1"
-env.SERVICE_NAME = "nginx-ai"
+env.SERVICE_NAME = "nginx-ai-release"
 
 node('slave-swarm-dind') {
     timestamps {
